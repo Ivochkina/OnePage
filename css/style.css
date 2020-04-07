@@ -1,8 +1,120 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
+
+header {
     background-color: #e9e9e9;
+    /*padding-bottom: 201px;*/
+}
+
+.header-container {
+    max-width: 1171px;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    padding-top: 38px;
+}
+
+nav {
+    float: right;
+}
+
+.header-container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding-top: 45px;
+    margin-left: 30px;
+    margin-bottom: 180px;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #191919;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+}
+
+header ul li a:hover {
+    color: #10c9c3;
+}
+
+.info-wrap {
+    max-width: 474px;
+
+}
+
+
+.info h1 {
+    margin-bottom: 32px;
+    color: #1d1d1d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.38px;
+}
+
+.info p {
+    color: #787878;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 39px;
+}
+
+.info a {
+    background-color: #10c9c3;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 84px;
+    text-transform: uppercase;
+    padding: 23px 46px;
+    margin-bottom: 50px;
+}
+
+.aboutus-wrap {
+    max-width: 620px;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.aboutus h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #191919;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 41px;
+
+}
+
+.aboutus p {
+    color: #787878;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 37px;
 }
