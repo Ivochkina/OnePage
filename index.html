@@ -9,7 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Nunito+Sans|Work+Sans&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 
 
 </head>
@@ -66,10 +69,10 @@
 
 <section class="block">
     <div class="block-container">
-        <div class="block-1"><span>548</span> projects completed</div>
-        <div class="block-2"><span>1465</span>WORKING HOURS</div>
-        <div class="block-3"><span>548</span>POSITIVE FEEDBACKS</div>
-        <div class="block-4"><span>548</span>HAPPY CLIENTS</div>
+        <div class="block-1"><p>548</p> projects completed</div>
+        <div class="block-2"><p>1465</p>WORKING HOURS</div>
+        <div class="block-3"><p>548</p>POSITIVE FEEDBACKS</div>
+        <div class="block-4"><p>548</p>HAPPY CLIENTS</div>
     </div>
 </section>
 
@@ -155,11 +158,16 @@
 </section>
 <section class="review">
     <div class="review-wrap">
-        <p>“ Outstanding job and exceeded all expectations. It was a pleasure
-            to work with them on a sizable first project and am looking
-            forward to start the next one asap.”</p>
-        <h4>Michael Hopkins</h4>
+        <div class="owl-carousel">
+            <div><p>“Outstanding job and exceeded all expectations. It was a pleasure<br>to work with them on a sizable first project and am looking<br>forward to start the next one asap.”</p>
+                <h4>Michael Hopkins</h4></div>
+            <div><p>“Outstanding job and exceeded all expectations. It was a pleasure<br>to work with them on a sizable first project and am looking<br>forward to start the next one asap.”</p>
+                <h4>Michael Hopkins</h4></div>
+            <div><p>“Outstanding job and exceeded all expectations. It was a pleasure<br>to work with them on a sizable first project and am looking<br>forward to start the next one asap.”</p>
+                <h4>Michael Hopkins</h4></div>
+        </div>
     </div>
+
 </section>
 
 <section class="images">
@@ -188,7 +196,7 @@
             <div class="form-group__title">
                 <input name="title" type="text" placeholder="Your Title"></div>
             <textarea>Your Comment</textarea>
-            <button name="button" type="submit">send message</button>
+            <button class="form_button" name="button" type="submit">send message</button>
         </form>
     </div>
 </section>
@@ -204,28 +212,32 @@
             <p>hello@pirolltheme.com</p>
             <p> +44 987 065 908 </p>
         </div>
-
-        <div class="footer-about">
-            <a href="#" target="_blank">Projects</a>
-            <a href="#" target="_blank">About</a>
-            <a href="#" target="_blank">Services</a>
-            <a href="#" target="_blank"> Carreer</a>
-        </div>
-        <div class="footer-news"><a href="#" target="_blank">News</a>
-            <a href="#" target="_blank">Events</a>
-            <a href="#" target="_blank">Contact</a>
-            <a href="#" target="_blank"> Legals</a>
-        </div>
-        <div class="footer-social">
-            <a href="#" target="_blank">Facebook</a>
-            <a href="#" target="_blank">Twitter</a>
-            <a href="#" target="_blank">Instagram</a>
-            <a href="#" target="_blank">Dribbble</a>
-        </div>
+        <ul class="footer-about">
+            <li><a href="#" target="_blank">Projects</a></li>
+            <li><a href="#" target="_blank">About</a></li>
+            <li><a href="#" target="_blank">Services</a></li>
+            <li><a href="#" target="_blank"> Carreer</a></li>
+        </ul>
+        <ul class="footer-news">
+           <li> <a href="#" target="_blank">News</a></li>
+            <li>  <a href="#" target="_blank">Events</a></li>
+            <li> <a href="#" target="_blank">Contact</a></li>
+            <li><a href="#" target="_blank"> Legals</a></li>
+        </ul>
+        <ul class="footer-social">
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">Dribbble</a></li>
+        </ul>
     </div>
 
 
 </footer>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/scripts.js"></script>
+
 
 </body>
 </html>

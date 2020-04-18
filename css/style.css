@@ -94,7 +94,8 @@ header ul li a:hover {
     padding: 23px 46px;
     margin-bottom: 50px;
 }
-.info a:hover{
+
+.info a:hover {
     border: solid 2px #e9e9e9;
     -webkit-box-shadow: 0 0 15px 15px #F06CAA;
     box-shadow: 0 0 15px 15px #F06CAA;
@@ -138,6 +139,7 @@ header ul li a:hover {
     background-color: #f8f9f9;
     padding: 164px 0;
     position: relative;
+    z-index: 5;
 }
 
 .skills:after {
@@ -149,6 +151,7 @@ header ul li a:hover {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -1;
 
 }
 
@@ -168,7 +171,7 @@ header ul li a:hover {
     color: #171717;
     font-size: 30px;
     font-weight: 500;
-    line-height: 84px;
+    /*line-height: 84px;*/
     margin-right: auto;
     letter-spacing: 0.3px;
 
@@ -233,14 +236,15 @@ header ul li a:hover {
 .block-container {
     max-width: 1171px;
     margin: auto;
+    padding-left: 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.block span {
-    display: block;
+.block p {
+    /*display: block;*/
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
@@ -258,21 +262,26 @@ header ul li a:hover {
     line-height: 30px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    /*align-self: center;*/
+
 
 }
 
-.block-1 {
-    margin-left: 5px;
-    margin-right: 137px;
-}
+/*.block-1 {*/
+/*    margin-left: 5px;*/
+/*    margin-right: 137px;*/
+/*}*/
 
-.block-2 {
-    margin-right: 176px;
-}
+/*.block-2 {*/
+/*    margin-right: 176px;*/
+/*}*/
 
-.block-3 {
-    margin-right: 146px;
-}
+/*.block-3 {*/
+/*    margin-right: 146px;*/
+/*}*/
 
 .block-1:before {
     content: "\e622";
@@ -283,8 +292,9 @@ header ul li a:hover {
     font-size: 48px;
     font-weight: 400;
     line-height: 30px;
+    display: inline-block;
     position: relative;
-    top: 60px;
+    top: 50px;
     right: 70px;
 
 }
@@ -300,7 +310,7 @@ header ul li a:hover {
     font-weight: 400;
     line-height: 30px;
     position: relative;
-    top: 60px;
+    top: 50px;
     right: 70px;
 
 }
@@ -315,7 +325,7 @@ header ul li a:hover {
     font-weight: 400;
     line-height: 30px;
     position: relative;
-    top: 60px;
+    top: 50px;
     right: 70px;
 
 }
@@ -330,7 +340,7 @@ header ul li a:hover {
     font-weight: 400;
     line-height: 30px;
     position: relative;
-    top: 60px;
+    top: 50px;
     right: 70px;
 }
 
@@ -548,8 +558,6 @@ header ul li a:hover {
 }
 
 .ui, .web, .app, .game, .seo, .photo, .graphic, .illustr {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     width: 265px;
     margin-bottom: 70px;
@@ -558,6 +566,7 @@ header ul li a:hover {
 }
 
 .ui:before {
+    display: block;
     content: "\e6af";
     font-family: "Pe-icon-7-stroke", sans-serif;
     width: 40px;
@@ -666,7 +675,7 @@ header ul li a:hover {
 
 .review {
     background-color: #10c9c3;
-    padding: 179px 0;
+    padding: 179px  0 60px;
 
 }
 
@@ -674,7 +683,6 @@ header ul li a:hover {
     max-width: 1171px;
     margin: auto;
     text-align: center;
-    padding: 0 80px;
 
 }
 
@@ -696,6 +704,25 @@ header ul li a:hover {
     text-transform: uppercase;
     letter-spacing: 1.2px;
 }
+.owl-dots .owl-dot span{
+    width: 6px;
+    height: 6px;
+    background-color: #b0e8e6;
+    border-radius: 50%;
+    display:inline-block;
+    margin:  0 4px;
+
+}
+.owl-dots .owl-dot{
+    margin-top: 109px;
+}
+.owl-dots .owl-dot.active span{
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display:inline-block;
+}
 
 .images {
     background-color: #ffffff;
@@ -713,6 +740,7 @@ header ul li a:hover {
     justify-content: space-around;
 
 }
+
 
 .images img:hover {
     -webkit-box-shadow: -5px 10px 12px 5px #FFA6F3;
@@ -742,7 +770,7 @@ header ul li a:hover {
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     font-weight: 900;
-    line-height: 84px;
+    /*line-height: 84px;*/
     letter-spacing: 0.3px;
     margin-bottom: 35px;
 
@@ -760,7 +788,7 @@ header ul li a:hover {
 }
 
 .form-group__name input {
-    width: 320px;
+    width: 49%;
     padding: 18px 0 19px 20px;
     color: #787878;
     font-family: "Nunito Sans", sans-serif;
@@ -810,7 +838,7 @@ form textarea {
     border: none;
 }
 
-button {
+.form_button {
     display: block;
     background-color: #10c9c3;
     padding: 22px 35px;
@@ -825,7 +853,7 @@ button {
 
 }
 
-button:hover {
+.form_button:hover {
     background-color: #1fd88c;
     -webkit-box-shadow: 0 0 15px 15px #AAA8F0;
     box-shadow: 0 0 15px 15px #AAA8F0;
@@ -840,7 +868,7 @@ footer {
     max-width: 1171px;
     margin: auto;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
 }
@@ -878,7 +906,8 @@ footer {
     font-weight: 400;
     letter-spacing: 0.07px;
 }
-.footer-info{
+
+.footer-info {
     margin-right: 250px;
 }
 
@@ -886,25 +915,23 @@ footer {
     margin-right: 145px;
 
 }
-.footer-about{
-    display: flex;
-    flex-direction: column;
+
+ul li {
+    list-style: none;
+}
+
+.footer-about {
     margin-right: 55px;
 
 }
-.footer-news{
-    display: flex;
-    flex-direction: column;
+
+.footer-news {
     margin-right: 135px;
 }
-.footer-social {
-    display: flex;
-    flex-direction: column;
-}
+
 
 footer a {
     text-decoration: none;
-
     color: #bcbcbc;
     font-family: "Nunito Sans", sans-serif;
     font-size: 15px;
