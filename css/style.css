@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'Now';
+    src: url(../fonts/Now-Medium.eot);
+    src: url(../fonts/Now-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/Now-Medium.woff2) format('woff2'),
+    url(../fonts/Now-Medium.woff) format('woff'),
+    url(../fonts/Now-Medium.ttf) format('truetype'),
+    url(../fonts/Now-Medium.svg#Now-Medium) format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Now';
+    src: url(../fonts/Now-Bold.eot);
+    src: url(../fonts/Now-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/Now-Bold.woff2) format('woff2'),
+    url(../fonts/Now-Bold.woff) format('woff'),
+    url(../fonts/Now-Bold.ttf) format('truetype'),
+    url(../fonts/Now-Bold.svg#Now-Bold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -265,7 +290,6 @@ header ul li a:hover {
 
 
 }
-
 
 
 .block-1:before {
@@ -660,7 +684,7 @@ header ul li a:hover {
 
 .review {
     background-color: #10c9c3;
-    padding: 179px  0 60px;
+    padding: 179px 0 60px;
 
 }
 
@@ -689,24 +713,27 @@ header ul li a:hover {
     text-transform: uppercase;
     letter-spacing: 1.2px;
 }
-.owl-dots .owl-dot span{
+
+.owl-dots .owl-dot span {
     width: 6px;
     height: 6px;
     background-color: #b0e8e6;
     border-radius: 50%;
-    display:inline-block;
-    margin:  0 5px;
+    display: inline-block;
+    margin: 0 5px;
 
 }
-.owl-dots .owl-dot{
+
+.owl-dots .owl-dot {
     margin-top: 109px;
 }
-.owl-dots .owl-dot.active span{
+
+.owl-dots .owl-dot.active span {
     width: 10px;
     height: 10px;
     background-color: #ffffff;
     border-radius: 50%;
-    display:inline-block;
+    display: inline-block;
 }
 
 .images {
@@ -927,4 +954,149 @@ footer a:hover {
     color: #1fd88c;
     -webkit-box-shadow: 0 0 15px 15px #FFA6F3;
     box-shadow: 0 0 15px 15px #FFA6F3;
+}
+
+.form-wrap {
+    max-width: 528px;
+    margin: auto;
+    text-align: center;
+}
+
+.password input, .facebook {
+    width: 100%;
+}
+
+.dialog-email {
+    max-width: 575px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.dialog-email h3 {
+    color: #363636;
+    font-family: 'Now';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.dialog-email input {
+    width: 384px;
+    height: 60px;
+    border-radius: 3px;
+    border: 1px solid #b7b7b7;
+    background-color: #ffffff;
+    font-size: 30px;
+    outline:none;
+
+}
+
+form .password input {
+    padding: 21px 0;
+    background-color: #b7b7b7;
+    background-image: linear-gradient(to left, #b7b7b7 0%, #d7d7d7 100%);
+    border-radius: 2px;
+    font-family: 'Now';
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 29px;
+    margin-top: 29px;
+    border: none;
+    outline:none;
+}
+
+::-webkit-input-placeholder {
+    color: #000000;
+}
+
+::-moz-placeholder {
+    color: #000000;
+}
+
+:-moz-placeholder {
+    color: #000000;
+}
+
+:-ms-input-placeholder {
+    color: #000000;
+}
+
+form h4 {
+    margin-bottom: 30px;
+    color: #363636;
+    font-family: 'Now';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+form .facebook {
+    padding: 21px 0;
+    color: #ffffff;
+    font-family: Now;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: #4865a3;
+    background-image: linear-gradient(to left, #4865a3 0%, #567cce 100%);
+    border: none;
+}
+
+form .facebook:before {
+    content: "\f39e";
+    display: inline-block;
+    font-family: 'Font Awesome 5 Brands';
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-right: 16px;
+
+}
+
+.ui-dialog {
+    padding: 0;
+    width: 100% !important;
+    max-width: 750px !important;
+    border: none !important;
+}
+
+.ui-dialog.ui-draggable .ui-dialog-titlebar {
+    background-color: #000000;
+    padding: 40px 0;
+    color: #ffffff;
+    font-family: 'Now';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.ui-dialog .ui-dialog-title {
+    float: none;
+}
+
+.ui-dialog .ui-dialog-content {
+    padding: 43px 0 166px;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    top: -10%;
+    right: 0;
+
 }
