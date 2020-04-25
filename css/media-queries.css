@@ -154,7 +154,7 @@
         width: 100%;
     }
 
-    .dialog-email h3 {
+    .dialog-email label {
 
         margin-bottom: 25px;
     }
@@ -176,7 +176,7 @@
  br{
      display: none;
  }
-    form .password input{
+    form .password {
      margin-bottom: 15px;
  }
    form h4{

@@ -975,7 +975,7 @@ footer a:hover {
     align-self: center;
 }
 
-.dialog-email h3 {
+.dialog-email label {
     color: #363636;
     font-family: 'Now';
     font-size: 22px;
@@ -996,7 +996,8 @@ footer a:hover {
 
 }
 
-form .password input {
+form .password  {
+    width: 100%;
     padding: 21px 0;
     background-color: #b7b7b7;
     background-image: linear-gradient(to left, #b7b7b7 0%, #d7d7d7 100%);
@@ -1010,23 +1011,10 @@ form .password input {
     margin-top: 29px;
     border: none;
     outline:none;
-}
-
-::-webkit-input-placeholder {
     color: #000000;
 }
 
-::-moz-placeholder {
-    color: #000000;
-}
 
-:-moz-placeholder {
-    color: #000000;
-}
-
-:-ms-input-placeholder {
-    color: #000000;
-}
 
 form h4 {
     margin-bottom: 30px;
@@ -1039,6 +1027,7 @@ form h4 {
 }
 
 form .facebook {
+    display: inline-block;
     padding: 21px 0;
     color: #ffffff;
     font-family: Now;
@@ -1050,6 +1039,9 @@ form .facebook {
     background-color: #4865a3;
     background-image: linear-gradient(to left, #4865a3 0%, #567cce 100%);
     border: none;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
 }
 
 form .facebook:before {
@@ -1086,6 +1078,7 @@ form .facebook:before {
 
 .ui-dialog .ui-dialog-title {
     float: none;
+    text-align: center;
 }
 
 .ui-dialog .ui-dialog-content {
